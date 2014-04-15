@@ -1,0 +1,10 @@
+<%= content_for :title, "#{@user.handle}" %>
+
+<h2><%= @user.handle %></h2>
+
+<%= @user.email %>
+<br>
+<br>
+
+<%= link_to "update", edit_user_path(@user), :class => "btn-sm btn-warning", :method => "patch" %>
+<%= link_to "delete", user_path(@user), :class => "btn-sm btn-danger", method: :delete, data:  {confirm: "Are you sure?  You'll be deleted forever!"}, remote: true %>

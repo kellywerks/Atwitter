@@ -4,6 +4,7 @@ Atwitter::Application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
   root to: 'users#index'
+
   resources :sessions
   resources :users
   resources :tweets

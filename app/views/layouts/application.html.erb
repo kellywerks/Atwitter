@@ -10,12 +10,12 @@
 <body>
 
   <div class="container">
-    <div class="navbar">
+    <div class="navbar navbar-fixed-top navbar-inverse">
     <%= link_to "Home", root_url, class: "navbar-text pull-left" %>
     <% if current_user %>
       <%= link_to "Tweet", new_tweet_path, method: "get", class: "navbar-text pull-left" %>
       <div class="navbar-text pull-right">
-        Logged in as <%= link_to current_user.email, user_path(current_user) %>
+        Logged in as <%= link_to current_user.handle, user_path(current_user) %>
       </div>
       <%= link_to "Log Out", session_path("current"), method: "delete", class: "navbar-text pull-right" %>
     <% else %>
@@ -24,12 +24,14 @@
     <% end %>
     </div>
 
-    <%= flash[:notice] %>
-    <%= flash[:alert] %>
+    <div class="page_content">
 
-    <%= yield %>
+      <%= flash[:notice] %>
+      <%= flash[:alert] %>
 
+      <%= yield %>
 
+    </div>
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 == Atwitter
 =Author:  Kelly Becker
 =Epicodus Assignment:  Build a twitter clone
-Uses:  Ruby, Rails, PostgreSQL, Capybara, Action Mailer, ActiveRecord
+Uses:  Ruby, Rails, PostgreSQL, Capybara, Action Mailer, ActiveRecord, Bcrypt, letter_opener
+Objective:  Create mailers for various events
 
-* Create user sign ups.
-* Send sign up email confirmation.
+* [DONE] Create user sign ups.
+* [DONE] Send sign up email confirmation.
 * Let users post tweets.
 * Email users if their handle is in a tweet.
 * Let users follow each other.
@@ -13,5 +14,9 @@ Uses:  Ruby, Rails, PostgreSQL, Capybara, Action Mailer, ActiveRecord
 * Let users upload photos in tweets.
 * Add pagination for index views (USE:  Kaminari)
 * Create preferences page where users can change email prefs.
+
+TO DO:
+* Complete update/destroy functionality for user profile
+* Confirm email delivery to 'real' email (test successful with letter_opener only)
 
 
