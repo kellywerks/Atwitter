@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= content_for?(:title) ? yield(:title)+" | Atwitter" : "Atwitter" %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="navbar">
+    <%= link_to "Home", root_url, class: "navbar-text pull-left" %>
+    <% if current_user %>
+      <%= link_to "Tweet", new_tweet_path, method: "get", class: "navbar-text pull-left" %>
+      <div class="navbar-text pull-right">
+        Logged in as <%= link_to current_user.email, user_path(current_user) %>
+      </div>
+      <%= link_to "Log Out", session_path("current"), method: "delete", class: "navbar-text pull-right" %>
+    <% else %>
+      <%= link_to "Log In", new_session_path, class: "navbar-text pull-right" %>
+      <%= link_to "Sign Up", new_user_path, class: "navbar-text pull-right" %>
+    <% end %>
+    </div>
+
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+
+    <%= yield %>
+
+
+</body>
+
+</html>

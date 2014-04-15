@@ -1,0 +1,17 @@
+== Atwitter
+=Author:  Kelly Becker
+=Epicodus Assignment:  Build a twitter clone
+Uses:  Ruby, Rails, PostgreSQL, Capybara, Action Mailer, ActiveRecord
+
+* Create user sign ups.
+* Send sign up email confirmation.
+* Let users post tweets.
+* Email users if their handle is in a tweet.
+* Let users follow each other.
+* Send email notification to user when they are followed.
+* Add a page showing who a user follows and who follows them.
+* Let users upload photos in tweets.
+* Add pagination for index views (USE:  Kaminari)
+* Create preferences page where users can change email prefs.
+
+
