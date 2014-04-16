@@ -14,7 +14,7 @@
     <div class="navbar navbar-fixed-top navbar-inverse">
     <%= link_to "Home", root_url, class: "navbar-text pull-left" %>
     <% if current_user %>
-      <%= link_to "Tweet", new_tweet_path, method: "get", class: "navbar-text pull-left" %>
+      <%= link_to "Tweet", new_tweet_path(current_user), method: "get", class: "navbar-text pull-left" %>
       <div class="navbar-text pull-right">
         Logged in as <%= link_to current_user.handle, user_path(current_user) %>
       </div>

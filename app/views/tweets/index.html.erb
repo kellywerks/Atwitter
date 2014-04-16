@@ -1,1 +1,14 @@
 <%= content_for :title, "Tweets" %>
+
+<%= form_for @tweet, remote: true do |f| %>
+  <div class="form-group">
+    <%= f.label :tweet %> <br>
+    <%= f.text_field :tweet %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+  </div>
+  <%= f.submit(class: 'btn-sm') %>
+<% end %>
+
+<h2>Your Tweets</h2>
+
+<%= render tweet %>

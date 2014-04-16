@@ -6,7 +6,7 @@ Objective:  Create mailers for various events
 
 * [DONE] Create user sign ups.
 * [DONE] Send sign up email confirmation.
-* Let users post tweets.
+* [DONE] Let users post tweets.
 * Email users if their handle is in a tweet.
 * Let users follow each other.
 * Send email notification to user when they are followed.
@@ -16,7 +16,7 @@ Objective:  Create mailers for various events
 * Create preferences page where users can change email prefs.
 
 TO DO:
-* Complete update/destroy functionality for user profile
+* Complete update functionality for user profile
 * Confirm email delivery to 'real' email (test successful with letter_opener only)
 
 
