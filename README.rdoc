@@ -1,6 +1,7 @@
-== Atwitter
-=Author:  Kelly Becker
-=Epicodus Assignment:  Build a twitter clone
+= Atwitter
+Author:  Kelly Becker
+Epicodus Assignment:  Build a twitter clone
+
 Uses:  Ruby, Rails, PostgreSQL, Capybara, Action Mailer, ActiveRecord, Bcrypt, letter_opener
 Objective:  Create mailers for various events
 
